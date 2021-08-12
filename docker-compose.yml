@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+
+  fluent_test:
+    image: fluent/fluent-bit:latest
+    volumes:
+      - ./fluent-bit.conf:/var/vc/fluent-bit.conf
+      - ./parsers.conf:/var/vc/parsers.conf
+      - ./connect.log:/var/vc/logs/connect.log
+      - ./output:/output
+    command: [
+        "/fluent-bit/bin/fluent-bit",
+        "--config=/var/vc/fluent-bit.conf",
+        "--verbose"
+    ]

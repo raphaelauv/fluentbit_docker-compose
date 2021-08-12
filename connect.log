@@ -1,0 +1,9 @@
+[2021-04-26 14:41:48,654] WARM Cleaner encountered an exception class com.toto:
+[SF_KAFKA_CONNECTOR] Exception: Failed to upload file
+[SF_KAFKA_CONNECTOR] Error Code: 2003
+[SF_KAFKA_CONNECTOR] Detail: Failed to upload file to Snowflake Stage though JDBC
+[SF_KAFKA_CONNECTOR] Message: SQL access control error:
+[2021-04-26 15:30:32,121] INFO
+[SF_KAFKA_CONNECTOR] pipe toto, ingest files: [toto.json.gz] (com.toto)
+[2021-04-26 15:30:32,121] INFO
+[SF_KAFKA_CONNECTOR] pipe toto, ingest files: [toto.json.gz] (com.toto)
